@@ -44,7 +44,7 @@ class PacientesController extends Controller
         if ($paciente!=null)
             return $paciente;
         $mensaje = ["mensaje" => "No se encontro el paciente con el id ${id} "];
-        return response($mensaje, 404);
+        return response($mensaje, 401);
 
     }
 
